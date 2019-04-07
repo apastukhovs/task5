@@ -23,6 +23,7 @@ class Json implements iWorkData {
         if (isset($key)) {
             $key = trim($key);
             $this->data += array($key => $val);
+            var_dump($this->data);
             file_put_contents(JSON_FILE, json_encode($this->data), JSON_FORCE_OBJECT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_NUMERIC_CHECK);
             return true;
         }

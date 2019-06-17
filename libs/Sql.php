@@ -18,7 +18,7 @@ class Sql implements iWorkData {
 		$stmt->bindParam(':key', $key);
 		$stmt->bindParam(':val', $val);
 		$stmt->execute();
-		var_dump($stmt);
+		var_dump($stmt);  
 	}
     public function getData($key) {
 		$stmt = $this->pdo->prepare("select * from user where id = :key");

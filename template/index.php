@@ -7,7 +7,7 @@
 <body>
 	<div>
         <hr>
-	    <?php echo 'Cookie: '.$cookGetData; ?>
+	    <?php echo 'Cookie: '.$coockie; ?>
 	    
     </div>
     <div>
@@ -17,7 +17,8 @@
     </div>
     <div>
         <hr>
-        <?php echo 'Json Data: '.$jsonGetData; ?>
+        <h3>Json result:</h3>
+        <p><?= $jsonData3; ?><br><?=$jsonData4; ?></p>
         <hr>   
     </div>
     <div>

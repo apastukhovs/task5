@@ -7,6 +7,10 @@ include 'libs/Cookie.php';
 include 'libs/Session.php';
 include 'libs/Sql.php';
 
+$coockieData = new Cookie();
+$coockieData->saveData('name', 'Jack');
+$coockie = $coockieData->getData('name');
+
 $sessionData = (new Session())->saveData('Hello', 'Mickel');
 $sessionGetData = (new Session())->getData('Hello');
 $iniData = (new Ini())->saveData('xml', '9');
@@ -20,9 +24,7 @@ $jsonData->saveData('john', '15');
 
 $jsonData3 = (new Json())->getData('john');
 
-$coockieData = new Cookie();
-$coockieData->saveData('name', 'Jack');
-$coockie = $coockieData->getData('name');
+
 /*$objCookie->deleteData('name');
 /*$jsonData4 = (new Json())->deleteData('luck');
 var_dump($jsonData4);
